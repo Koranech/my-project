@@ -1,5 +1,5 @@
 import type {FC} from "react";
-
+import './CourseComponent.css'
 type PropsType = {
     course: string
 }

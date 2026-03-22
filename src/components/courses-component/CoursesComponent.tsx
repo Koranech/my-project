@@ -1,5 +1,6 @@
 import {coursesTitleArray} from "../../data/courseTitleArray.ts";
 import {CourseComponent} from "../course-component/CourseComponent.tsx";
+import './CoursesComponent.css'
 
 export const CoursesComponent = () => {
     return (
