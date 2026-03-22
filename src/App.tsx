@@ -1,16 +1,12 @@
 import './App.css'
-import {coursesTitleArray} from "./data/courseTitleArray.ts";
+import {CoursesComponent} from "./components/courses-component/CoursesComponent.tsx";
 
 function App() {
 
 
   return (
     <>
-        <ul>
-            {
-                coursesTitleArray.map((value, index) => <li key={index}>{value}</li>)
-            }
-        </ul>
+       <CoursesComponent/>
     </>
   )
 }
