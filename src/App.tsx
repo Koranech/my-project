@@ -1,13 +1,5 @@
 import './App.css'
-
-const coursesTitleArray: string[] = [
-    'JavaScript Complex',
-    'Java Complex',
-    'Python Complex',
-    'QA Complex',
-    'Fullstack',
-    'Frontend'
-];
+import {coursesTitleArray} from "./data/courseTitleArray.ts";
 
 function App() {
 
