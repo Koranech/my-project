@@ -1,5 +1,5 @@
 import './App.css'
-import {CoursesComponent} from "./components/courses-component/CoursesComponent.tsx";
+import {FamilyComponent} from "./components/family-component/FamilyComponent.tsx";
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <CoursesComponent/>
+      <FamilyComponent/>
     </>
   )
 }
