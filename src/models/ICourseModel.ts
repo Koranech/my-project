@@ -1,4 +1,6 @@
 export interface ICourseModel  {
     title: string,
-    monthDuration: number
+    monthDuration: number,
+    hourDuration: number,
+    modules: string[]
 }

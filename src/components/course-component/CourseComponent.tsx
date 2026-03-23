@@ -7,7 +7,20 @@ type PropsType = {
 
 export const CourseComponent: FC<PropsType> = ({course}) => {
     return (
-        <li>{course.title} - {course.monthDuration}</li>
+       <div>
+           <h2>{course.title}</h2>
+           <p>Триває {course.monthDuration} місяців</p>
+           <p>Триває {course.hourDuration} годин</p>
+           <ul>
+           {
+               course.modules.map((module:string, index: number) => {
+                   return(
+                       <li key={index}>{module}</li>
+                   )
+               })
+           }
+           </ul>
+       </div>
 
     )
 }
