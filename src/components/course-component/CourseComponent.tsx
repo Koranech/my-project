@@ -13,11 +13,7 @@ export const CourseComponent: FC<PropsType> = ({course}) => {
            <p>Триває {course.hourDuration} годин</p>
            <ul>
            {
-               course.modules.map((module:string, index: number) => {
-                   return(
-                       <li key={index}>{module}</li>
-                   )
-               })
+               course.modules.map((module:string, index: number) => <li key={index}>{module}</li>)
            }
            </ul>
        </div>
