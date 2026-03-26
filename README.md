@@ -73,15 +73,13 @@ export default defineConfig([
 ```
 Опис Завдання
 
-#ohm4AivCEBv
+#x7sQQ3cJ3
 
-https://jsonplaceholder.typicode.com/todos – тут масив даних. Ознайомтесь з ним для початку
+https://jsonplaceholder.typicode.com/posts – тут масив даних. Ознайомтесь з ним для початку.
 
-Створити компонент TodoComponent, який буде містити інформацію про окремий об’єкт з масиву.
+Створити необхідні моделі та компоненти та вивести всю інформацію за аналогією з попереднім завданням.
 
-Створити компонент TodosComponent, в якому відбувається ітерація масиву даних, отриманих з апі.
-
-Кореневим компонентом є App
+Додати мінімальну стилізацію
 
 .env
-VITE_API_URL=https://jsonplaceholder.typicode.com/todos
+VITE_API_URL=https://jsonplaceholder.typicode.com/posts

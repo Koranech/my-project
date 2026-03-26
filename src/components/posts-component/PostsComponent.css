@@ -1,7 +1,7 @@
-.todos{
-    background: silver;
-
+.posts {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    background: #9191cc;
 }
