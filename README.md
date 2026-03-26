@@ -73,13 +73,9 @@ export default defineConfig([
 ```
 Опис Завдання
 
-#98uhQGhaN
+#hQj9gOH
 
-https://jsonplaceholder.typicode.com/comments – тут масив даних.Ознайомтесь з ним для початку.
-
-Створити необхідні моделі та компоненти та вивести всю інформацію за аналогією з попереднім завданням.
-
-Додати мінімальну стилізацію
+**Те саме що і попередні завдання, але данні отримати з апі – 
 
 .env
-VITE_API_URL=https://jsonplaceholder.typicode.com/comments
+VITE_API_URL=https://dummyjson.com/products

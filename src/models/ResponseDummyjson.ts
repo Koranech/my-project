@@ -1,11 +1,8 @@
-import type {PostModel} from "./PostModel.ts";
-import type {TodoModel} from "./TodoModel.ts";
-import type {CommentModel} from "./CommentModel.ts";
+import type {ProductModel} from "./ProductModel.ts";
 
-export interface ResponseDummyjson{
-    todos?: TodoModel[],
-    posts?: PostModel[],
-    comments?: CommentModel[],
+
+export interface ResponseDummyjson {
+    products: ProductModel[];
     total: number,
     skip: number,
     limit: number,
