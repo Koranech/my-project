@@ -1,7 +1,8 @@
-.posts {
+body{
+    background: cornflowerblue;
+}
+.comments{
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-    background: #9191cc;
 }

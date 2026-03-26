@@ -73,13 +73,13 @@ export default defineConfig([
 ```
 Опис Завдання
 
-#x7sQQ3cJ3
+#98uhQGhaN
 
-https://jsonplaceholder.typicode.com/posts – тут масив даних. Ознайомтесь з ним для початку.
+https://jsonplaceholder.typicode.com/comments – тут масив даних.Ознайомтесь з ним для початку.
 
 Створити необхідні моделі та компоненти та вивести всю інформацію за аналогією з попереднім завданням.
 
 Додати мінімальну стилізацію
 
 .env
-VITE_API_URL=https://jsonplaceholder.typicode.com/posts
+VITE_API_URL=https://jsonplaceholder.typicode.com/comments

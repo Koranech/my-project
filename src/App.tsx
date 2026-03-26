@@ -1,5 +1,6 @@
 import './App.css'
-import PostsComponent from "./components/posts-component/PostsComponent.tsx";
+import Comments from "./components/comments/Comments.tsx";
+
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
     return (
         <>
-            <PostsComponent/>
+            <Comments/>
         </>
     )
 }
