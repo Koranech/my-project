@@ -19,7 +19,7 @@ const Product: FC<ProductPropsType> = ({product}) => {
             <h3>Tags</h3>
             <ul>
                 {
-                    product.tags.map(tag => <li>{tag}</li>)
+                    product.tags.map((tag, index) => <li key={index}>{tag}</li>)
                 }
             </ul>
             <p>Brand: {product.brand}</p>

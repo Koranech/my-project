@@ -13,7 +13,7 @@ const Products = () => {
             setProducts(products)
         }
         fetchData()
-    })
+    }, [])
     return (
         <div className="products">
             {
