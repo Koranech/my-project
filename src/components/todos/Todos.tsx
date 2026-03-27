@@ -14,7 +14,7 @@ const Todos = () => {
             setTodos(todos)
         }
         fetchData()
-    })
+    }, [])
     return (
         <div className={'todos'}>
             <h1>Todos</h1>
