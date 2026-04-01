@@ -1,16 +1,16 @@
 
 Опис Завдання
 
-#chszHaH9
+Побудувати меню, з можливістю переходу на наступні маршрути:
 
-Побудувати меню з можливістю переходу на наступні сторінки:
+/users/jsonplaceholder
 
-/users
+/users/dummyjson
 
-/posts
+/posts/jsonplaceholder
 
-/comments
+/posts/dummyjson
 
-/products
+/comments/jsonplaceholder
 
-Контент на сторінках відсутній. Лише грамотна обробка роутів в двох варіантах (router object  та browser router (необов’язково, але рекомендовано))
+Контент на сторінках відсутній. Лише грамотна обробка роутів
