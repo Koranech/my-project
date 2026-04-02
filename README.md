@@ -1,16 +1,18 @@
 
 Опис Завдання
 
+#Uyj2GjyDDF
+
 Побудувати меню, з можливістю переходу на наступні маршрути:
 
-/users/jsonplaceholder
+/users/jsonplaceholder – відобразити всі об’єкти з  https://jsonplaceholder.typicode.com/users
 
-/users/dummyjson
+/users/dummyjson – відобразити всі об’єкти з https://dummyjson.com/users
 
-/posts/jsonplaceholder
+/posts/jsonplaceholder- відобразити всі об’єкти з  https://jsonplaceholder.typicode.com/posts
 
-/posts/dummyjson
+/posts/dummyjson – відобразити всі об’єкти з https://dummyjson.com/posts
 
-/comments/jsonplaceholder
+/comments/jsonplaceholder – відобразити всі об’єкти з https://jsonplaceholder.typicode.com/comments
 
-Контент на сторінках відсутній. Лише грамотна обробка роутів
+/comments/dummyjson – відобразити всі об’єкти з https://dummyjson.com/comments

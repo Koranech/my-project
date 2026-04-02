@@ -7,6 +7,7 @@ const CommentsPage = () => {
             Comments Content
             <ul>
                 <li><Link to={'jsonplaceholder'}>jsonplaceholder</Link></li>
+                <li><Link to={'dummyjson'}>dummyjson</Link></li>
             </ul>
             <hr/>
             <Outlet/>

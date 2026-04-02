@@ -1,16 +1,26 @@
-const baseUrl = 'https://jsonplaceholder.typicode.com'
+const baseJSONPlaceholderUrl = 'https://jsonplaceholder.typicode.com'
+const baseDummyUrl = 'https://dummyjson.com/'
 
 export const urls = {
-    users: {
-        allUsers: baseUrl + '/users',
+    usersJSON: {
+        allUsers: baseJSONPlaceholderUrl + '/users',
     },
-    posts: {
-        allPosts: baseUrl + '/posts',
+    usersDummy:{
+        allUsers: baseDummyUrl + '/users',
     },
-    comments: {
-        allComments: baseUrl + '/comments',
+    postsJSON: {
+        allPosts: baseJSONPlaceholderUrl + '/posts',
     },
-    products: {
-        allProducts: baseUrl + '/products',
+    postsDummy: {
+        allPosts: baseDummyUrl + '/posts',
+    },
+    commentsJSON: {
+        allComments: baseJSONPlaceholderUrl + '/comments',
+    },
+    commentsDummy: {
+        allComments: baseDummyUrl + '/comments',
+    },
+    productsJSON: {
+        allProducts: baseJSONPlaceholderUrl + '/products',
     }
 }
