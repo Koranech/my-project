@@ -1,18 +1,14 @@
 
 Опис Завдання
 
-#Uyj2GjyDDF
+#z5PFSTAK
 
-Побудувати меню, з можливістю переходу на наступні маршрути:
+На головній сторінці вивести всіх користувачів з будь-якого апі.
 
-/users/jsonplaceholder – відобразити всі об’єкти з  https://jsonplaceholder.typicode.com/users
+При кліку на певного користувача вивести його корзини товарів, не заміняючи батьківський компонент (поруч з зі списком користувачів)
 
-/users/dummyjson – відобразити всі об’єкти з https://dummyjson.com/users
+#knZgVIwvqd
 
-/posts/jsonplaceholder- відобразити всі об’єкти з  https://jsonplaceholder.typicode.com/posts
+На головній сторінці вивести всіх користувачів з будь-якого апі.
 
-/posts/dummyjson – відобразити всі об’єкти з https://dummyjson.com/posts
-
-/comments/jsonplaceholder – відобразити всі об’єкти з https://jsonplaceholder.typicode.com/comments
-
-/comments/dummyjson – відобразити всі об’єкти з https://dummyjson.com/comments
+При кліку на певного користувача вивести його корзини товарів, заміняючи(!!!!!) батьківський компонент списком з корзинами.
