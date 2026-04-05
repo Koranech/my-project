@@ -14,7 +14,7 @@ export const UserComponent: FC<UserPropsType> = ({user}) => {
     }
 
     return <div>
-        <h2><Link to={'/users/' + user.id +'/details'} state={user}>{user.id} - {user.firstName}</Link></h2>
+        <h2><Link to={'/users/' + user.id +'/details'}>{user.id} - {user.firstName}</Link></h2>
         <button onClick={onButtonClickNavigate}>{user.firstName} cart</button>
     </div>;
 }
