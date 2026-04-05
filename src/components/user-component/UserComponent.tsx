@@ -1,9 +1,9 @@
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import type {FC} from "react";
 import type {IUser} from "../../models/IUser.ts";
 
 type UserPropsType = {
-    user: IUser
+    user: IUser,
 }
 export const UserComponent: FC<UserPropsType> = ({user}) => {
 
@@ -14,7 +14,7 @@ export const UserComponent: FC<UserPropsType> = ({user}) => {
     }
 
     return <div>
-        <h2>{user.id} - {user.firstName}</h2>
+        <h2><Link to={'/users/' + user.id +'/details'} state={user}>{user.id} - {user.firstName}</Link></h2>
         <button onClick={onButtonClickNavigate}>{user.firstName} cart</button>
     </div>;
 }

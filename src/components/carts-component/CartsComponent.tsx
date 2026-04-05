@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import type ICart from "../../models/ICart.ts";
 import type {ICartResponseModel} from "../../models/ICartResponseModel.ts";
 import {cartService} from "../../services/api.service.ts";
+import CartComponent from "../cart-component/CartComponent.tsx";
 
 
 const CartsComponent = () => {
@@ -21,7 +22,7 @@ const CartsComponent = () => {
     return (
         <div>
             {
-                carts.map(cart => <div key={cart.id}>Юзер - {cart.userId}</div>)
+                carts.map(cart => <CartComponent key={cart.id} cart={cart}/>)
             }
         </div>
     );
