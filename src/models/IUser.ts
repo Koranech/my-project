@@ -1,3 +1,9 @@
+import type {ICrypto} from "./ICrypto.ts";
+import type {IAddress} from "./IAddress.ts";
+import type {IBank} from "./IBank.ts";
+import type {ICompany} from "./ICompany.ts";
+import type {IHair} from "./IHair.ts";
+
 export interface IUser {
    id: number;
    firstName: string;
@@ -15,57 +21,17 @@ export interface IUser {
    height: number;
    weight: number;
    eyeColor: string;
-   hair: Hair;
+   hair: IHair;
    ip: string;
-   address: Address;
+   address: IAddress;
    macAddress: string;
    university: string;
-   bank: Bank;
-   company: Company;
+   bank: IBank;
+   company: ICompany;
    ein: string;
    ssn: string;
    userAgent: string;
-   crypto: Crypto;
+   crypto: ICrypto;
    role: string;
 }
 
-export interface Hair {
-   color: string;
-   type: string;
-}
-
-export interface Address {
-   address: string;
-   city: string;
-   state: string;
-   stateCode: string;
-   postalCode: string;
-   coordinates: Coordinates;
-   country: string;
-}
-
-export interface Coordinates {
-   lat: number;
-   lng: number;
-}
-
-export interface Bank {
-   cardExpire: string;
-   cardNumber: string;
-   cardType: string;
-   currency: string;
-   iban: string;
-}
-
-export interface Company {
-   department: string;
-   name: string;
-   title: string;
-   address: Address;
-}
-
-export interface Crypto {
-   coin: string;
-   wallet: string;
-   network: string;
-}

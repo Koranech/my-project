@@ -1,19 +1,13 @@
 import './App.css'
+import {Link, Outlet} from "react-router-dom";
 
-
-
-
-
-function App() {
-
-
+const App = () => {
     return (
-        <>
+        <div>
+            <Link to={'users'}>Users Page</Link>
+            <Outlet/>
+        </div>
+    );
+};
 
-        </>
-    )
-}
-
-export default App
-
-
+export default App;
