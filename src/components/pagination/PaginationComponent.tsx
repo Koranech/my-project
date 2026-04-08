@@ -14,9 +14,7 @@ const PaginationComponent = () => {
             </button>
 
             <button onClick={() => {
-                if (currentPage < 21) {
                     setQuery({pg: (++currentPage).toString()})
-                }
             }}>next
             </button>
         </div>
