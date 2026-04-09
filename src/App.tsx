@@ -1,10 +1,12 @@
 import './App.css'
-import {Link, Outlet} from "react-router-dom";
+import {Outlet} from "react-router-dom";
+import Menu from "./components/menu/Menu.tsx";
 
 const App = () => {
     return (
         <div>
-            <Link to={'users'}>Users Page</Link>
+            <Menu/>
+            <hr/>
             <Outlet/>
         </div>
     );

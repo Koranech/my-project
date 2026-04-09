@@ -1,10 +1,17 @@
-import {urls} from "../constants/urls.ts";
-import type IUserPromise from "../models/IUserPromise.ts";
+import axios from "axios";
+import type {ICar} from "../models/ICar.ts";
 
-export const getAllUsers = async (page: string): Promise<IUserPromise> => {
-    const limit = 10
-    const skip = limit * (+page) - limit
-    return await fetch(urls.getPageOfUsers + skip)
-        .then(users => users.json())
 
+const axiosInstance = axios.create({
+    baseURL: import.meta.env.VITE_CARS_API_URL,
+    headers: {"Content-Type": "application/json"},
+})
+
+export const getAllCars =  async (): Promise<ICar[]> => {
+        const {data} =  await axiosInstance.get<ICar[]>("/cars");
+        return data
+}
+
+export const addCar = async (car: ICar) => {
+      await axiosInstance.post("/cars", car);
 }
