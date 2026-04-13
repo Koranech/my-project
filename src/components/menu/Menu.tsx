@@ -2,10 +2,13 @@ import {Link} from "react-router-dom";
 
 const Menu = () => {
     return (
-        <>
-            <p><Link to={'cars'}>Cars Page</Link></p>
-            <p><Link to={'cars/create'}>Create car</Link></p>
-        </>
+        <div>
+            <ul>
+                <li><Link to={''}>Home Page</Link></li>
+                <li><Link to={'login'}>Login Page</Link></li>
+                <li><Link to={'auth/resources'}>Auth Page</Link></li>
+            </ul>
+        </div>
     );
 };
 
