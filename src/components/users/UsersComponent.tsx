@@ -5,20 +5,22 @@ import UserComponent from "../user/UserComponent.tsx";
 
 const UsersComponent = () => {
 
-    const [users, setUsers] = useState<IUser[]>([])
+    //Мемоізація масиву
+    const arr: number[] = useMemo(() => {
+        return[1, 2, 3];
+    }, [])
 
+    //Мемомізація функції
+    const warning = useCallback(() => {
+        console.warn('warning!');
+    }, [])
+
+    const [users, setUsers] = useState<IUser[]>([])
     useEffect(() => {
         userService.getUsers()
             .then(users => setUsers(users))
     }, []);
 
-    const arr: number[] = useMemo(() => {
-        return[1, 2, 3];
-    }, [])
-
-    const warning = useCallback(() => {
-        console.warn('warning!');
-    }, [])
 
 
     return (

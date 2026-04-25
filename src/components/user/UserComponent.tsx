@@ -7,12 +7,17 @@ type UserPropsType = {
     arr: number[]
 }
 
-const UserComponent:FC<UserPropsType> = memo(({user, arr})  => {
+//Мемомізація компоненти
+const UserComponent:FC<UserPropsType> = memo(({user, arr, warning})  => {
+
+    console.clear()
     console.log(arr)
+    warning()
+
     return (
         <div>
             <h2>{user.id} - {user.name}</h2>
-            <p>{user.username}</p>
+            <p>Username: {user.username}</p>
         </div>
     );
 });
