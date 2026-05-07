@@ -1,17 +1,14 @@
-import './App.css'
-import {CoursesComponent} from "./components/courses-component/CoursesComponent.tsx";
-
+import './App.css';
+import {Outlet} from "react-router";
 
 function App() {
 
 
-  return (
-    <>
-      <CoursesComponent/>
-    </>
-  )
+    return (
+        <>
+            <Outlet/>
+        </>
+    );
 }
 
 export default App
-
-
