@@ -4,7 +4,7 @@ import type {IUserResponseModel} from "../models/IUserResponseModel.ts";
 
 // export const urls = {
 //     getUsers: (skip: string) => {
-//         return baseUrl + '/users?limit=10&skip=' + skip
+//         return baseUrl + '/users?\e`limit=10&skip=' + skip
 //     }
 // }
 
@@ -17,5 +17,4 @@ export const service = {
             .then(users => users.json())
     }
 }
-
 
