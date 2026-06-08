@@ -1,9 +1,9 @@
 import {createRoot} from 'react-dom/client'
 import './index.css'
 import {RouterProvider} from "react-router-dom";
-import {router} from "./lesson8/1-redux-toolkit/router/router.tsx";
 import {Provider} from "react-redux";
-import {store} from "./lesson8/1-redux-toolkit/redux/stores/store.ts";
+import {store} from "./lesson8/2-homework/redux/store.ts";
+import {router} from "./lesson8/2-homework/router/router.tsx";
 
 
 createRoot(document.getElementById('root')!)
@@ -12,4 +12,4 @@ createRoot(document.getElementById('root')!)
     <RouterProvider router={router}/>
     </Provider>
 )
-    // .render(<RouterProvider routes={routes}/>);
+    // .render(<RouterProvider router={router}/>);
