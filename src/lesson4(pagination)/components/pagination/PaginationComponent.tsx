@@ -15,6 +15,7 @@ const PaginationComponent = () => {
     const [total, setTotal] = useState(1)
     const countPages: number = Math.ceil(total / currentLimit)
 
+
     useEffect(() => {
         service.getAllUsers(currentPage.toString(), currentLimit)
             .then(({total}: IUserResponseModel) => setTotal(total))
