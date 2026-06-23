@@ -3,7 +3,7 @@ import {useAxiosInstance} from "../customHooks/useAxiosInstance.tsx";
 
 const SomeComponent = () => {
 
-    const users = useFetch<any>('/users');
+    const users = useFetch<any>('/1-users');
     const posts = useAxiosInstance<any>('/posts')
     return (
         <div>

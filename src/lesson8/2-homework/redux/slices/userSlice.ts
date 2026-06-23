@@ -7,7 +7,7 @@ const initUserSliceState: UserSliceType =  {users: []}
 
 const loadUsers = createAsyncThunk('loadUsers', async (_, thunkAPI) => {
    try {
-       const users = await allService<IUser[]>('/users')
+       const users = await allService<IUser[]>('/1-users')
        console.log(users)
        return thunkAPI.fulfillWithValue(users)
    }
